@@ -61,7 +61,7 @@ if page == "Digit Classifier":
             img_array = img_array.reshape(1, 28, 28, 1)
 
             # Load model and predict
-            model = tf.keras.models.load_model("mnist_model.h5")
+            model = tf.keras.models.load_model("mnist_cnn_model.h5")
             prediction = model.predict(img_array)
             predicted_digit = np.argmax(prediction)
 
